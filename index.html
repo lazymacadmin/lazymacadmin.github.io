@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% if paginator.page == 1 %}
+{% endif %}
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <hr />
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+
+    
+    <p class="post-meta">{{ post.content | strip_html | truncatewords: 50 }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+{% include pagination.html %}

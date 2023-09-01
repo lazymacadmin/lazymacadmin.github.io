@@ -1,0 +1,31 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: The Lazy Macadmin
+#email: 
+description: Because there has to be an easier way...
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lazymacadmin.github.io" # the base hostname & protocol for your site
+src_url: "https://github.com/lazymacadmin/lazymacadmin.github.io/blob/main"
+mastodon_server: hachyderm.io
+mastodon_username: "@RegalWeasel"
+author: drewbarnes
+timezone: America/New_York
+future: true
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+#pagination
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+paginate: 10
+paginate_path: "/page/:num"
