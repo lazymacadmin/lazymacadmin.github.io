@@ -34,7 +34,7 @@ That doesn't sound too bad, if patching is your only job. But for the rest of us
 
 #### **Automating Patch**
 
-The key to improving Patch is automating everything we can. Package creation? Automate with [Autopkg](https://github.com/autopkg/autopkg). There a ton of people who use and [describe](https://amsys.co.uk/introduction-autopkg-2) how to use autopkg, so I'm not going to get too far into the weeds on that. There are still more ways to automatically run autopkg [from a script](https://derflounder.wordpress.com/category/autopkg-conductor/) or [from a repository](https://grahamrpugh.com/2020/07/10/gitlab-runner-and-autopkg.html). And if you use some obscure piece of software that isn't Jamf's patch catalog or you want to maintain your own definitions, well, there's an [autopkg processor](https://github.com/onecheapgeek/UpdateTitleEditor/blob/main/Processor/UpdateTitleEditor.py) for that too.
+The key to improving Patch is automating everything we can. Package creation? Automate with [Autopkg](https://github.com/autopkg/autopkg). There a ton of people who use and [describe](https://amsys.co.uk/introduction-autopkg-2) how to use autopkg, so I'm not going to get too far into the weeds on that. There are still more ways to automatically run autopkg [from a script](https://derflounder.wordpress.com/category/autopkg-conductor/) or [from a repository](https://grahamrpugh.com/2020/07/10/gitlab-runner-and-autopkg.html). And if you use some obscure piece of software that isn't Jamf's patch catalog or you want to maintain your own definitions, well, there's an [autopkg processor](https://github.com/lazymacadmin/UpdateTitleEditor/blob/main/Processor/UpdateTitleEditor.py) for that too.
 
 And that gets us to an advanced, autopatching workflow. Using autopkg, Graham Pugh's [JamfUploader](https://github.com/autopkg/grahampugh-recipes/tree/main/JamfUploaderProcessors) processors to extend autopkg by [uploading built packages](https://github.com/autopkg/grahampugh-recipes/blob/main/JamfUploaderProcessors/JamfPackageUploader.py) automatically and [updating patch policies](https://github.com/autopkg/grahampugh-recipes/blob/main/JamfUploaderProcessors/JamfPatchUploader.py), we can set ourselves up to automate the whole process.
 
@@ -56,9 +56,9 @@ So when do we need to manually touch patch policies? Well, for most patches, a s
 #### **TL;DR**
 
 Autopkg and the referenced processors can make your automated Patch workflow as simple as:
-- autopkg run [SampleApp.jamf](https://github.com/onecheapgeek/UpdateTitleEditor/blob/main/AutopatchSampleRecipes/SampleApp.jamf.recipe.yaml)
+- autopkg run [SampleApp.jamf](https://github.com/lazymacadmin/UpdateTitleEditor/blob/main/AutopatchSampleRecipes/SampleApp.jamf.recipe.yaml)
 - autopkg run [Sleep](https://github.com/onecheapgeek/UpdateTitleEditor/blob/main/AutopatchSampleRecipes/Sleep.recipe.yaml) (if using Title Editor, so your Jamf server catches the new version)
-- autopkg run [SampleApp.patch](https://github.com/onecheapgeek/UpdateTitleEditor/blob/main/AutopatchSampleRecipes/SampleApp.patch.recipe.yaml)
+- autopkg run [SampleApp.patch](https://github.com/lazymacadmin/UpdateTitleEditor/blob/main/AutopatchSampleRecipes/SampleApp.patch.recipe.yaml)
 
 For multiple recipes, create a recipe list file with one per line and your automation can be as simple as a LaunchAgent running `autopkg run -l recipeList.txt` on a schedule. That's it - autopatching with autopkg and Jamf's Patch Management. I'm cheesy, so I call it **_autopatchg_**.
 
@@ -89,7 +89,7 @@ The following patch policies were created or updated in Jamf Pro:
 #### **Links**
 - [Autopkg](https://github.com/autopkg/autopkg)
 - [Graham Pugh's autopkg recipe repository for JamfUploader processors](https://github.com/autopkg/grahampugh-recipes/tree/main)
-- [UpdateTitleEditor repository](https://github.com/onecheapgeek/UpdateTitleEditor)
+- [UpdateTitleEditor repository](https://github.com/lazymacadmin/UpdateTitleEditor)
 
 ----
 [^1]: This is literally all the guidance I got from Jamf to my support request asking about what I was seeing. If this affects you, please reach out to support and reference this PI.
