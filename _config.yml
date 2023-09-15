@@ -16,7 +16,7 @@ mastodon_server: hachyderm.io
 mastodon_username: "@RegalWeasel"
 github_username: lazymacadmin
 slack_username: dbarnes
-author: drewbarnes
+#author: drewbarnes
 timezone: America/New_York
 future: true
 
@@ -30,5 +30,6 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
 paginate: 10
 paginate_path: "/page/:num"
