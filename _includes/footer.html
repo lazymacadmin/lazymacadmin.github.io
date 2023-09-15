@@ -21,6 +21,13 @@
             {% include icon-github.html username=site.github_username %}
           </li>
           {% endif %}
+
+          {% if site.slack_username %}
+          <li>
+            {% include icon-slack.html username=site.slack_username %}
+          </li>
+          {% endif %}
+
        </ul>
       </div>
 
