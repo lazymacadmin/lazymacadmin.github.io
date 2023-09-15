@@ -2,11 +2,11 @@
  * Syntax highlighting styles
  */
 .highlight {
-    background: #d2d2d2;
+    background: #eadbc1; // Tangeman Tan
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-      background: #efefef;
+      background: #eadbc1; // Tangeman Tan
     }
 
     .c     { color: #998; font-style: italic } // Comment

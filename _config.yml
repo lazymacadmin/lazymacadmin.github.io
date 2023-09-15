@@ -15,6 +15,7 @@ src_url: "https://github.com/lazymacadmin/lazymacadmin.github.io/blob/main"
 mastodon_server: hachyderm.io
 mastodon_username: "@RegalWeasel"
 github_username: lazymacadmin
+slack_username: dbarnes
 author: drewbarnes
 timezone: America/New_York
 future: true

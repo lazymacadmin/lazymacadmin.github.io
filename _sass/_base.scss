@@ -26,7 +26,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -118,8 +117,8 @@ a {
 pre,
 code {
     font-size: 15px;
-    background-color: #efefef;
-    font-family: "monospace", Courier;
+    background-color: #eadbc1; // Tangeman Tan
+    font-family: 'B612 Mono', monospace;
 }
 
 code {
@@ -139,13 +138,35 @@ pre {
         padding-left: 0;
     }
 }
+/**
+ * Scrollbars
+ */
 
+ /* Works on Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color:  #d4d2da #a7a5aa; //Steger Silver background
+  }
 
+/* Chrome, Safari */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 12px;
+    }
+::-webkit-scrollbar-track-piece  {
+    background-color: #a7a5aa; // Steger Silver
+}
+::-webkit-scrollbar-thumb:horizontal {
+    height: 6px;
+    background-color: #d4d2da;
+    -webkit-border-radius: 1ex;
+}
 
 /**
  * Blockquotes, lines, tables
  */
 blockquote {
+    background-color: #f3f3f3; // UC light grey
     color: $grey-color;
     border: 1px solid #ddd;
     border-left: 3px solid #f36d33;
