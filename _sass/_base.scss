@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    font-weight: medium;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -237,8 +238,8 @@ table thead {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 3));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 3));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -246,8 +247,15 @@ table thead {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+
+    @include media-query($on-palm) {
+        max-width: -webkit-calc(#{$content-width});
+        max-width:         calc(#{$content-width});
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
