@@ -5,12 +5,8 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>            
-          {% if site.mastodon_username %}
-          <li>
-              {% include icon-mastodon.html username=site.mastodon_username mastodon_server=site.mastodon_server %}
-          </li>
-          {% endif %}
+          <li>{{ site.title }}</li> 
+          <li class="byline">{{ site.description }}</li>         
         </ul>
       </div>
 
@@ -28,12 +24,14 @@
           </li>
           {% endif %}
 
+          {% if site.mastodon_username %}
+          <li>
+              {% include icon-mastodon.html username=site.mastodon_username mastodon_server=site.mastodon_server %}
+          </li>
+          {% endif %}
        </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
     </div>
 
   </div>
