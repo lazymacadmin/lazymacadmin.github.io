@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Obtaining a Bearer Token Using API Role Authentication with Jamf"
-comments: true
+comments: false
 ---
 Beginning with Jamf Pro 10.49, it became possible to create [api-only clients and roles](https://learn.jamf.com/bundle/jamf-pro-documentation-current/page/API_Roles_and_Clients.html). From my perspective, there is no immediate reason to change all of my scripts over but if you have ever wanted your scripts to not require a username and password capable of GUI access to you Jamf server, this will certainly be welcome news.
 

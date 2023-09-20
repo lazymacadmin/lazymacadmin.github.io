@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Automated Jamf Patch Workflows"
-comments: true
+comments: false
 ---
 
 * [Jamf Patch Management Overview](#overview-of-jamf-patch-management)

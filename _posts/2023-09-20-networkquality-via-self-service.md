@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using networkQuality to Gather Data for Support Calls"
-comments: true
+comments: false
 ---
 
 
