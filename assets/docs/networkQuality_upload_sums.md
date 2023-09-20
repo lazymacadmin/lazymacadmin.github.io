@@ -1,6 +1,7 @@
 ---
 layout: doc
 ---
+##
 
 ### networkQuality Summaries as Uploaded to Jamf Pro
 
