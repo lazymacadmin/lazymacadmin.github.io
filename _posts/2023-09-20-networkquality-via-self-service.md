@@ -7,11 +7,6 @@ comments: false
 
 Some of our frequent support calls involves choppy video or audio on Zoom or Teams. As more of our users work, teach, or learn from home it becomes harder to narrow down if the issue is local to the machine or from the user's internet connection. I decided to use Jamf's Self Service app to enable gathering of data about a user's internet connection to help our techs on those calls.
 
-* [Self Service Method](#self-service-method)
-* [Teams Webhook Method](#teams-webhook-method)
-* [Resources](#resources)
-{% if page.comments %} * [Comments](#Comments) {% endif %}
-<hr>
 #### **Self Service Method**
 
 Initially I used the Jamf Pro API to upload a report file to the user's machine record. One downside to this is that some form of credentials need to be present on the machine during execution. It could be: 
@@ -35,12 +30,6 @@ Since this script is user initiated, I use [swiftDialog](https://swiftdialog.app
 We also use a variation to monitor bandwidth constraints on campus. I moved away from the file upload option for this when I created a Teams channel for speed tests and set up an [incoming webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet) to receive the results.  I also simplified the script to show no progress feedback. Now we have regular checks to ensure our campus's connection is sufficient for learning.<br>
 <img src="/assets/images/webhook_results.png" height="401" width="614" class="responsive">
 ---
-
-### Resources:
-
-1. <a href="/assets/docs/networkQuality_SelfService.html">networkQuality script with upload for Self Service </a>
-1. <a href="/assets/docs/networkQuality_upload_sums.html">Summaries as Uploaded to Jamf Pro </a>
-1. <a href="/assets/docs/networkQuality_Teams.html">networkQuality script for Teams </a>
-
+Script samples coming at a future time
 
 
