@@ -29,6 +29,7 @@ Since this script is user initiated, I use [swiftDialog](https://swiftdialog.app
 
 We also use a variation to monitor bandwidth constraints on campus. I moved away from the file upload option for this when I created a Teams channel for speed tests and set up an [incoming webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet) to receive the results.  I also simplified the script to show no progress feedback. Now we have regular checks to ensure our campus's connection is sufficient for learning.<br>
 <img src="/assets/images/webhook_results.png" height="401" width="614" class="responsive">
+
 ---
 Script samples coming at a future time
 
