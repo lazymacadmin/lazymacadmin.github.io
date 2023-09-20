@@ -17,7 +17,7 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     40px;
 
 $text-color:       #333; // Bearcats Black
 $background-color: #e0dfe3; // Main Street Mist
@@ -42,6 +42,7 @@ $on-laptop:        90%;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
