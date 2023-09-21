@@ -7,7 +7,7 @@ comments: false
 
 Some of our frequent support calls involves choppy video or audio on Zoom or Teams. As more of our users work, teach, or learn from home it becomes harder to narrow down if the issue is local to the machine or from the user's internet connection. I decided to use Jamf's Self Service app to enable gathering of data about a user's internet connection to help our techs on those calls.
 
-#### **Self Service Method**
+#### Self Service Method
 
 Initially I used the Jamf Pro API to upload a report file to the user's machine record. One downside to this is that some form of credentials need to be present on the machine during execution. It could be: 
 - username/password either embedded in the script or passed on the command line as a script parameter
@@ -27,7 +27,7 @@ Since this script is user initiated, I use [swiftDialog](https://swiftdialog.app
 <br/>
 
 ---
-#### **Teams Webhook Method**
+#### Teams Webhook Method
 
 We also use a variation to monitor bandwidth constraints on campus. I moved away from the file upload option for this when I created a Teams channel for speed tests and set up an [incoming webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet) to receive the results.  I also simplified the script to show no progress feedback. Now we have regular checks to ensure our campus's connection is sufficient for classroom, hybrid, and online instruction.<br>
 <img src="/assets/images/webhook_results.png" height="401" width="614" class="responsive"><br>

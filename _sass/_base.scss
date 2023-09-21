@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
-    font-weight: medium;
+    font-weight: regular;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -122,11 +122,6 @@ a {
     }
 }
 
-summary {
-    color: $brand-color;
-    text-decoration: none;
-    font-weight: medium;
-}
 
 /**
  * Code formatting
@@ -317,8 +312,16 @@ table thead {
 details {
 	padding-bottom: 20px;
 	color: grey;
+    font-weight: normal;
 }
 
 summary {
-	font-weight: bold;
+	font-weight: normal;
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
 }
