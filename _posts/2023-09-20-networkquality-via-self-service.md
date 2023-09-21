@@ -22,12 +22,14 @@ Since this script is user initiated, I use [swiftDialog](https://swiftdialog.app
 <img src="/assets/images/uploading_results.png" width="461" height="237" class="responsive" alt="Uploading results screenshot" ><br>
 <img src="/assets/images/testing_done.png" width="230" height="118" class="responsive" alt="Testing complete screenshot">
 <br>
-- [networkQuality Script for Self Service](https://gist.github.com/lazymacadmin/9c0d28ac7197582f915bb0742a68721c)<br>
-- [networkQuality Self Service Uploads](https://gist.github.com/lazymacadmin/3d43134a00b5d89c27f309f91ce76b36)
+<details><summary markdown="span"> networkQuality Script for Self Service </summary>{% gist 9c0d28ac7197582f915bb0742a68721c %}</details>
+<details><summary markdown="span"> networkQuality Self Service Uploads </summary>{% gist 3d43134a00b5d89c27f309f91ce76b36 %}</details>
+<br/>
 
 ---
 #### **Teams Webhook Method**
 
 We also use a variation to monitor bandwidth constraints on campus. I moved away from the file upload option for this when I created a Teams channel for speed tests and set up an [incoming webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet) to receive the results.  I also simplified the script to show no progress feedback. Now we have regular checks to ensure our campus's connection is sufficient for classroom, hybrid, and online instruction.<br>
 <img src="/assets/images/webhook_results.png" height="401" width="614" class="responsive"><br>
-- [networkQuality Script for Teams](https://gist.github.com/lazymacadmin/7ed223e219836a39732263abf160d5c3)
+<details><summary markdown="span"> networkQuality Script for Teams </summary>{% gist 7ed223e219836a39732263abf160d5c3 %}</details>
+
