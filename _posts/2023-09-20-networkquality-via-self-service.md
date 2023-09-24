@@ -22,7 +22,7 @@ Since this script is user initiated, I use [swiftDialog](https://swiftdialog.app
 <img src="/assets/images/uploading_results.png" width="461" height="237" class="responsive" alt="Uploading results screenshot" ><br>
 <img src="/assets/images/testing_done.png" width="230" height="118" class="responsive" alt="Testing complete screenshot">
 <br>
-<details><summary markdown="span"> networkQuality Script for Self Service </summary>{% gist 9c0d28ac7197582f915bb0742a68721c %}</details>
+<details><summary markdown="span"> networkQuality Script for Self Service </summary>{% gist 4a2d0ec01be5c1f911b926c9ec666f9e %}</details>
 <details><summary markdown="span"> networkQuality Self Service Uploads </summary>{% gist 3d43134a00b5d89c27f309f91ce76b36 %}</details>
 <br/>
 
