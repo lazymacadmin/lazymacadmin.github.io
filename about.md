@@ -4,7 +4,7 @@ title: About Me
 ---
 > Drew Barnes <br>
 > _noun_ <br>
->  A competent yet extremely opinionated Mac admin with over 20 years of experience at a branch campus of a larger University in the Midwest.
+>  A competent, extremely opinionated Mac admin with over 20 years of experience at a branch campus of a larger University in the Midwest. More then willing to share knowledge when able, and always willing to learn a better way to make things work with Apple in higher ed.
 
 I have a lot of thoughts about the state of technology in higher education as well as the direction things are headed, but I don't have a lot to say unless I think it can be useful to someone else. 
 
