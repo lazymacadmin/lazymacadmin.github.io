@@ -2,8 +2,9 @@
 layout: post
 title:  "Obtaining a Bearer Token Using API Role Authentication with Jamf"
 comments: false
+meta: JamfPro, 10.49.0, API, client_id, client_secret, token, authtoken
 ---
-Beginning with Jamf Pro 10.49, it became possible to create [api-only clients and roles](https://learn.jamf.com/bundle/jamf-pro-documentation-current/page/API_Roles_and_Clients.html). From my perspective, there is no immediate reason to change all of my scripts over but if you have ever wanted your scripts to not require a username and password capable of GUI access to you Jamf server, this will certainly be welcome news.
+Beginning with Jamf Pro 10.49, it became possible to create [api-only clients and roles](https://learn.jamf.com/bundle/jamf-pro-documentation-10.49.0/page/API_Roles_and_Clients.html). From my perspective, there is no immediate reason to change all of my scripts over but if you have ever wanted your scripts to not require a username and password capable of GUI access to you Jamf server, this will certainly be welcome news.
 
 But that's all I'm going to say about the why of API roles and clients in Jamf Pro. This is about how to get a bearer token in your scripts. I focused on my 2 most common use cases in oulling this together. There may be better or more efficient ways to do this, but these work and can be a jumping off point for building pr modifying existing scripts.
 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Automated Jamf Patch Workflows"
 comments: false
+meta: JamfPro, API, jamf-upload, patch-management, automation, autopkg, autopkg processors, autopkg recipes
 ---
 
 * [Jamf Patch Management Overview](#overview-of-jamf-patch-management)
