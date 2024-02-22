@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "So Long, Farewell, Goodbye to the Mac Admin Community"
-comments: false
+comments: true
 meta: 
 ---
 Today is Valentine's Day, so it seems somewhat appropriate to post a love letter of sorts to our fabulous community.

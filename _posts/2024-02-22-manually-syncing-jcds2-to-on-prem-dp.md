@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Manually Syncing JCDS2 to On-Premise Distribution Points"
-comments: false
+comments: true
 meta: JCDS JCDS2 On-premise Jamf Distribution Point
 ---
 ## Why? Just...why?

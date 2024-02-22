@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Patch-less Autopatching with Jamf"
-comments: false
+comments: true
 meta: JamfPro, API, jamf-upload, patch-management, automation, autopkg, autopkg processors, autopkg recipes
 ---
 I'm not great at coming up with great ideas, but I'm pretty decent at taking other people's ideas and making them automated. Because there always has to be an easier way, and as lazy Mac admin, that appeals to me.

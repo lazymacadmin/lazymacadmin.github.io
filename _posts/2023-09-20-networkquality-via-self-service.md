@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using networkQuality to Gather Data for Support Calls"
-comments: false
+comments: true
 meta: JamfPro, API, self service, client_id, client_secret, scripting, networkQuality
 ---
 

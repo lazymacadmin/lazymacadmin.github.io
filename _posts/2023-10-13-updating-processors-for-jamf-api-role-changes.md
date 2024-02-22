@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Attempting to Update My Autopkg Processor for Jamf API Roles/Clients"
-comments: false
+comments: true
 meta: JamfPro, API, client, secret, autopkg, processors, JN-I-27780, feature-request
 ---
 Part of my autopatchg workflow involves dismissing the patch notification when a patch policy is properly updated. In addition to Teams notifications, it's a visual reminder if an autopkg recipe fails. If there is a notification, I need to manually visit the patch and update the policy. To that end, I wrote [JamfClearPatchNotifications.py](https://github.com/lazymacadmin/UpdateTitleEditor/blob/main/Processor/JamfClearPatchNotifications.py) to handle clearing notifications at the end of the `.patch` recipe.
