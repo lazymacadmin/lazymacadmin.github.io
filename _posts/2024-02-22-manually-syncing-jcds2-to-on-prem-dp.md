@@ -81,5 +81,13 @@ Usage: sync_jcds_local_dp.zsh --id /path/to/identity_file --jss your.jamf.server
 
 I, as usual, let Graham do a lot of the heavy lifting on this and just cobbled together the pieces I needed to make it work. Hopefully this will help keep required functionality alive once Jamf Admin goes away.
 
+_**Update - 5/22/24**_
+
+Slack user [elaugel](https://macadmins.slack.com/team/UD462CMJB) reached out today twith questions about required mermissions for an API cliento. Since I had never thought to document I shared the permissions I had used (my autopkg API client) as a starting point. He and I narrowed the permissions down to a very simple set:
+- Read Packages
+- Read Jamf Content Distribution Server Files
+
+So if you need least required privileges, it doesn't get much easier than that.
+
 ## The Complete Script
 [The zsh script](https://gist.github.com/lazymacadmin/d4be46c2a782f34e1443e7714bfd22b4)
