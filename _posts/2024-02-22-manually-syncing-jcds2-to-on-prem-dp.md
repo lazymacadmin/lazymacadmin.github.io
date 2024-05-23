@@ -6,7 +6,7 @@ meta: JCDS JCDS2 On-premise Jamf Distribution Point
 ---
 ## Why? Just...why?
 
-With the release of Jamf Pro 11.2, Jamf has exposed API endpoits to programatically retrieve download URLs for packages in your JCDS2 distribution point. While I'm sure that most people are fine with only using their cloud distribution point, there are times when a on-premise distribution point may be preferable. In edu, there are times where a remote campus may have slower or limited capacity to pull down packages during peak hours, so the ability to sync during off-hours can reduce the load on the network.
+With the release of Jamf Pro 11.2, Jamf has exposed API endpoints to programmatically retrieve download URLs for packages in your JCDS2 distribution point. While I'm sure that most people are fine with only using their cloud distribution point, there are times when a on-premise distribution point may be preferable. In edu, there are times where a remote campus may have slower or limited capacity to pull down packages during peak hours, so the ability to sync during off-hours can reduce the load on the network.
 
 As our org has DPs on at least one branch campus, and since Jamf has announced the [impending demise of the Jamf Admin app](https://learn.jamf.com/bundle/jamf-pro-release-notes-current/page/Deprecations_and_Removals.html), I felt it was important to look into how to manage that workflow. While Jamf says they are "committed to finding alternative solutions for key workflows from Jamf Admin", they have shown in the past that they are not opposed to letting a loss of functionality - with no replacement - stand in the way of their product roadmap. For example, the delay between the [removal of Jamf Remote](https://learn.jamf.com/bundle/jamf-pro-release-notes-10.40.0/page/Deprecations_and_Removals.html) and the [introduction of Remote Assist](https://learn.jamf.com/bundle/jamf-pro-release-notes-11.1.0/page/New_Features_and_Enhancements.html) functionality was approximately 18 months, and the ability to install a package on demand still hasn't been replaced.
 
@@ -83,7 +83,7 @@ I, as usual, let Graham do a lot of the heavy lifting on this and just cobbled t
 
 _**Update - 5/22/24**_
 
-Slack user [elaugel](https://macadmins.slack.com/team/UD462CMJB) reached out today twith questions about required mermissions for an API cliento. Since I had never thought to document I shared the permissions I had used (my autopkg API client) as a starting point. He and I narrowed the permissions down to a very simple set:
+Slack user [elaugel](https://macadmins.slack.com/team/UD462CMJB) reached out today twith questions about required permissions for an API client. Since I had never thought to document I shared the permissions I had used (my autopkg API client) as a starting point, he and I began narrowing the permissions down to a very simple set:
 - Read Packages
 - Read Jamf Content Distribution Server Files
 
