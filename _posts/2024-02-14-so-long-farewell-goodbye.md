@@ -14,7 +14,7 @@ The Apple ecosystem has grown to include new products, opportunities, and challe
 
 Of course it isn't as simple as an aging techie yearning for the good old days (and yes, it hurts to call myself aging), but some of those other factors are specific to my soon-to-be former employer and changes coming to my position, and I don't want to dwell on things that aren't going to matter in a few short weeks.
 
-My employer will be looking to fill my position. If you're in the Greater Cincinnati-area and want to work at a higher-ed institution with benefits like tuition remission and a chance to work at a branch campus that serves a lot of under-served and first-generation students, let me know and I will make sure you find the [job posting](https://jobs.uc.edu/job/Cincinnati-Endpoint-Administrator-2%2C-Digital-Technology-Solutions-OH-45201/1148407500/). You'll have a chance to do some really good work and maybe make a difference for a lot of people.
+My employer will be looking to fill my position. If you're in the Greater Cincinnati-area and want to work at a higher-ed institution with benefits like tuition remission and a chance to work at a branch campus that serves a lot of under-served and first-generation students, let me know and I will make sure you find the job posting. You'll have a chance to do some really good work and maybe make a difference for a lot of people.
 
 I'm also looking to leave my [autopkg children](https://github.com/lazymacadmin/UpdateTitleEditor) in someone's hands. In time, I'll archive the Github repository so that anyone who wants to can fork it, if I don't find someone who wants to take it over. 
 
