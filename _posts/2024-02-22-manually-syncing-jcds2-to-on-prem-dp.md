@@ -4,6 +4,11 @@ title:  "Manually Syncing JCDS2 to On-Premise Distribution Points"
 comments: true
 meta: JCDS JCDS2 On-premise Jamf Distribution Point
 ---
+_**Update - 2/15/26**_
+
+Jamf has deprecated the `/vi/jcds/files` api endpoint. While I have verified this script still works, it's days are numbered and I will not be updating it once this endpoint is removed. The `/v1/cloud-distribution-point/files` endpoint does not contain the same information, so I am unaware of a drop-in replacement.
+
+
 ## Why? Just...why?
 
 With the release of Jamf Pro 11.2, Jamf has exposed API endpoints to programmatically retrieve download URLs for packages in your JCDS2 distribution point. While I'm sure that most people are fine with only using their cloud distribution point, there are times when a on-premise distribution point may be preferable. In edu, there are times where a remote campus may have slower or limited capacity to pull down packages during peak hours, so the ability to sync during off-hours can reduce the load on the network.
@@ -80,6 +85,7 @@ Usage: sync_jcds_local_dp.zsh --id /path/to/identity_file --jss your.jamf.server
 1. Write all actions to a log file specified on the command line
 
 I, as usual, let Graham do a lot of the heavy lifting on this and just cobbled together the pieces I needed to make it work. Hopefully this will help keep required functionality alive once Jamf Admin goes away.
+
 
 _**Update - 5/22/24**_
 
